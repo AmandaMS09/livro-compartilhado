@@ -1,0 +1,25 @@
+{
+  "name": "livro-compartilhado",
+  "version": "1.0.0",
+  "description": "Site de leitura coletiva com anotações anti-spoiler. Crie grupos de leitura e convide seus amigos para lerem em conjunto.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmandaMS09/livro-compartilhado.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmandaMS09/livro-compartilhado/issues"
+  },
+  "homepage": "https://livro-compartilhado.vercel.app/",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}
