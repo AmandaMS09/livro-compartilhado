@@ -13,8 +13,3 @@ app.use(
     origin: "*",
   })
 );
-
-// Inicialização do servidor
-app.listen(3000, () => {
-    console.log("Servidor inicializado!");
-});
