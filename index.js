@@ -13,3 +13,7 @@ app.use(
     origin: "*",
   })
 );
+
+app.get("/", function(req, res) {
+  res.sendFile("public/index.html")
+})
