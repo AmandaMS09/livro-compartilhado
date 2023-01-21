@@ -15,8 +15,8 @@ app.use(
 );
 
 // Configuração do cloud firestore
-import { initializeApp } from "firebase/app";
-import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
+const { initializeApp } = require('firebase/app');
+const { getFirestore, collection, getDocs } = require('firebase/firestore/lite');
 // Configuração do meu app no firebase
 const firebaseConfig = {
   apiKey: "AIzaSyD71Lo8v9xiHluEkT21tau8v14rHiFwTBg",
