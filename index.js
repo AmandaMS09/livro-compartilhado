@@ -1,4 +1,4 @@
-// Configuração do servidor
+// Configuração do express
 const express = require("express");
 const cors = require("cors");
 
@@ -13,6 +13,16 @@ app.use(
     origin: "*",
   })
 );
+
+// Configuração do cloud firestore
+const { initializeApp, applicationDefault, cert } = require('firebase-admin/app');
+const { getFirestore, Timestamp, FieldValue } = require('firebase-admin/firestore');
+
+initializeApp();
+
+const db = getFirestore();
+
+// Rotas
 
 app.get("/", function(req, res) {
   res.sendFile("public/index.html")
